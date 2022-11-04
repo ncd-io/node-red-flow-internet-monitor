@@ -1,0 +1,22 @@
+[
+    {
+        "id": "cfc79e8930548561",
+        "type": "exec",
+        "z": "de98ff89032ea6b0",
+        "command": "reboot",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Reboot LTE",
+        "x": 870,
+        "y": 340,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    }
+]
