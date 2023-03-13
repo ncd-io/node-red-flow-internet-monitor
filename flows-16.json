@@ -27,7 +27,7 @@
         "id": "3a5b9f2498dc2117",
         "type": "exec",
         "z": "4a8e6505234e6447",
-        "command": "",
+        "command": "reboot",
         "addpay": "",
         "append": "",
         "useSpawn": "false",
