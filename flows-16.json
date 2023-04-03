@@ -1,6 +1,6 @@
 [
     {
-        "id": "4a8e6505234e6447",
+        "id": "30569fd3407a0bca",
         "type": "tab",
         "label": "Monitor Internet Connectivity",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "79ddb6f44a5686c8",
+        "id": "2dacf58d50e20824",
         "type": "conf ping",
-        "z": "4a8e6505234e6447",
+        "z": "30569fd3407a0bca",
         "name": "Check Internet",
         "host": "8.8.8.8",
         "timeout": "5",
@@ -19,14 +19,14 @@
         "y": 340,
         "wires": [
             [
-                "881e2328c623e194"
+                "84a337923e761b59"
             ]
         ]
     },
     {
-        "id": "3a5b9f2498dc2117",
+        "id": "1b5ea330a92a4d7d",
         "type": "exec",
-        "z": "4a8e6505234e6447",
+        "z": "30569fd3407a0bca",
         "command": "reboot",
         "addpay": "",
         "append": "",
@@ -44,9 +44,9 @@
         ]
     },
     {
-        "id": "f636b23ec62230c3",
+        "id": "92bb8cfc7c83d7cb",
         "type": "debug",
-        "z": "4a8e6505234e6447",
+        "z": "30569fd3407a0bca",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -60,28 +60,28 @@
         "wires": []
     },
     {
-        "id": "ebed19d65b1c3314",
+        "id": "1c91ac8c5857c51a",
         "type": "inject",
-        "z": "4a8e6505234e6447",
+        "z": "30569fd3407a0bca",
         "name": "",
         "props": [],
-        "repeat": "10",
+        "repeat": "600",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "900",
         "topic": "",
         "x": 290,
         "y": 340,
         "wires": [
             [
-                "79ddb6f44a5686c8"
+                "2dacf58d50e20824"
             ]
         ]
     },
     {
-        "id": "881e2328c623e194",
+        "id": "84a337923e761b59",
         "type": "switch",
-        "z": "4a8e6505234e6447",
+        "z": "30569fd3407a0bca",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -99,8 +99,8 @@
         "y": 340,
         "wires": [
             [
-                "3a5b9f2498dc2117",
-                "f636b23ec62230c3"
+                "1b5ea330a92a4d7d",
+                "92bb8cfc7c83d7cb"
             ]
         ]
     }
